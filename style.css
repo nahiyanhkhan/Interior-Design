@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+.section {
+    display: flex;
+}
+
+
+
+/* CSS for Navigation bar */
+
+.nav-bar {
+    background-color: #F44336;
+    width: 20%;
+    height: 100vh;
+    position: fixed;
+}
+
+.company-name h1 {
+    color: white;
+    font-size: 20px;
+    display: flex;
+    padding-left: 30px;
+    padding-top: 100px;
+}
+
+.menues {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 100px 10px 0 20px;
+}
+
+.menues a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+.menues a:hover {
+    background-color: white;
+    color: black;
+}
+
+
+
+/* CSS for Main contents */
+
+.showcase,
+.services,
+.designers,
+.packages,
+.contact {
+    width: 95%;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+
+.main-content {
+    margin-top: 100px;
+    margin-left: 25%;
+    font-size: 30px;
+}
+
+.main-content h1 {
+    font-size: 2em;
+}
+
+.main-content h2 {
+    font-size: 1.5em;
+    color: #F44336;
+    margin-bottom: 20px;
+}
+
+.main-content p {
+    font-size: 16px;
+    margin: 16px 0;
+}
+
+
+
+/* CSS for Showcase section */
+
+.hline {
+    width: 50px;
+    border: 5px solid #F44336;
+    border-radius: 5px;
+}
+
+.img-table {
+    margin-top: 30px;
+}
+
+.showcase-img {
+    width: 100%;
+}
+
+table tr td {
+    padding-right: 10px;
+}
+
+
+
+/* CSS for Designers section */
+
+.designers-face {
+    display: flex;
+    margin-top: 20px;
+}
+
+.designers-face .person {
+    display: block;
+    background-color: #F1F1F1;
+    margin-right: 15px;
+}
+
+#p3 {
+    margin-right: 0px;
+}
+
+.designers-face .person img {
+    width: 100%;
+    margin-bottom: -10px;
+}
+
+.person-info {
+    padding: 0px 16px;
+}
+
+
+
+/* CSS for Packages seciton */
+
+.package-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul li {
+    list-style-type: none;
+    background-color: #F1F1F1;
+    border-bottom: 1px solid #dddddd;
+    font-size: 16px;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Basic package */
+
+.basic-pack {
+    width: 100%;
+    margin-right: 8px;
+}
+
+#basic {
+    background-color: #616161;
+    color: white;
+    font-size: 24px;
+    padding: 32px 16px;
+}
+
+#basic-room {
+    display: grid;
+}
+
+/* ----------------------- */
+/* Plus Minus button START */
+.plus-minus {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.b-minus,
+.b-plus,
+.p-minus,
+.p-plus {
+    font-size: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+/* Plus Minus button END */
+/* ----------------------- */
+
+#basic-price {
+    font-size: 30px;
+    font-weight: normal;
+    color: black;
+    margin: 10px 0;
+}
+
+#basic-signup {
+    color: black;
+    background-color: white;
+    width: auto;
+    margin: 0;
+}
+
+#basic-msg {
+    display: none;
+    color: #777777;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Pro package */
+
+.pro-pack {
+    width: 100%;
+    margin-left: 8px;
+}
+
+#pro {
+    background-color: #F44336;
+    color: white;
+    font-size: 24px;
+    padding: 32px 16px;
+}
+
+#pro-room {
+    display: grid;
+}
+
+#pro-price {
+    font-size: 30px;
+    font-weight: normal;
+    color: black;
+    margin: 10px 0;
+}
+
+#pro-signup {
+    width: auto;
+    margin: 0;
+}
+
+#basic-signup:hover,
+#pro-signup:hover {
+    background-color: black;
+    color: white;
+}
+
+#pro-msg {
+    display: none;
+    color: #777777;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+
+/* CSS for Contact section */
+
+label {
+    font-size: 16px;
+}
+
+.input-div {
+    display: grid;
+    margin: 18px 0;
+    width: 100%;
+}
+
+input {
+    padding: 8px;
+    width: 98% !important;
+}
+
+button {
+    width: 100%;
+    background-color: #F44336;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #CCCCCC;
+    color: black;
+}
