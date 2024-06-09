@@ -1,4 +1,9 @@
-// ------------ Basic section ------------
+function options(){
+    let btn = document.querySelector(".nav-top");
+    btn.classList.toggle("show");
+}
+
+// ------------ Basic package section ------------
 const b_minus = document.querySelector(".b-minus");
 const b_plus = document.querySelector(".b-plus");
 const b_price = document.querySelector("#basic-price");
@@ -37,7 +42,7 @@ b_btn.addEventListener("click", () => {
 
 
 
-// ------------ Pro section ------------
+// ------------ Pro package section ------------
 const p_minus = document.querySelector(".p-minus");
 const p_plus = document.querySelector(".p-plus");
 const p_price = document.querySelector("#pro-price");
