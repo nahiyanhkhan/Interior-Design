@@ -3,6 +3,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     font-style: normal;
 }
@@ -59,7 +60,7 @@ header {
 .main-content {
     margin-top: 100px;
     margin-left: 25%;
-    margin-right: 2%;
+    margin-right: 5%;
     font-size: 30px;
 }
 
@@ -98,8 +99,11 @@ header {
     border-radius: 5px;
 }
 
-.img-table {
+#images {
     margin-top: 30px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px 10px;
 }
 
 .showcase-img {
@@ -116,17 +120,14 @@ table tr td {
 
 .designers-face {
     display: flex;
+    justify-content: space-between;
+    row-gap: 15px;
     margin-top: 20px;
 }
 
 .designers-face .person {
-    display: block;
     background-color: #F1F1F1;
-    margin-right: 15px;
-}
-
-#p3 {
-    margin-right: 0px;
+    margin-right: 10px;
 }
 
 .designers-face .person img {
@@ -140,7 +141,7 @@ table tr td {
 
 
 
-/* CSS for Packages seciton */
+/* CSS for Packages section */
 
 .package-details {
     display: flex;
@@ -277,7 +278,7 @@ label {
 
 input {
     padding: 8px;
-    width: 98% !important;
+    width: 100%;
 }
 
 button {
@@ -295,6 +296,7 @@ button:hover {
     background-color: #CCCCCC;
     color: black;
 }
+
 
 @media (max-width: 799px) {
     .nav-bar {
@@ -348,7 +350,7 @@ button:hover {
     .nav-top.show {
         display: block;
     }
-    
+
     .nav-top ul li {
         list-style-type: none;
         font-size: 18px;
@@ -366,5 +368,38 @@ button:hover {
     .nav-top a:hover {
         background-color: white;
         color: black;
+    }
+}
+
+
+@media (max-width: 540px) {
+    .main-content h1 {
+        font-size: 1.3em;
+    }
+
+    .main-content h2 {
+        font-size: 1.1em;
+    }
+
+    .designers-face {
+        flex-direction: column;
+    }
+
+    .designers-face .person {
+        margin-right: 0;
+    }
+
+    .package-details {
+        flex-direction: column;
+        row-gap: 15px;
+    }
+
+    .basic-pack,
+    .pro-pack {
+        margin: 0;
+    }
+
+    #images {
+        grid-template-columns: auto;
     }
 }

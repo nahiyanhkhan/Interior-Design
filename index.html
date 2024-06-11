@@ -51,20 +51,15 @@
             <div class="showcase" id="showcase">
                 <h2>Showcase.</h2>
                 <hr class="hline">
-                <table class="img-table">
-                    <tr>
-                        <td><img src="images/showcase-01.jpg" class="showcase-img"></td>
-                        <td><img src="images/showcase-02.jpg" class="showcase-img"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/showcase-03.jpg" class="showcase-img"></td>
-                        <td><img src="images/showcase-04.jpg" class="showcase-img"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/showcase-05.jpg" class="showcase-img"></td>
-                        <td><img src="images/showcase-06.jpg" class="showcase-img"></td>
-                    </tr>
-                </table>
+
+                <div id="images">
+                    <img src="images/showcase-01.jpg" class="showcase-img">
+                    <img src="images/showcase-02.jpg" class="showcase-img">
+                    <img src="images/showcase-03.jpg" class="showcase-img">
+                    <img src="images/showcase-04.jpg" class="showcase-img">
+                    <img src="images/showcase-05.jpg" class="showcase-img">
+                    <img src="images/showcase-06.jpg" class="showcase-img">
+                </div>
             </div>
 
             <!-- Services Section -->
@@ -199,18 +194,18 @@
 
                 <form action="">
                     <div class="input-div">
-                        <label>Name</label>
-                        <input type="text" name="Name" required>
+                        <label for="name">Name</label>
+                        <input type="text" name="Name" id="name" required>
                     </div>
 
                     <div class="input-div">
-                        <label>Email</label>
-                        <input type="email" name="Email" required>
+                        <label for="email">Email</label>
+                        <input type="email" name="Email" id="email" required>
                     </div>
 
                     <div class="input-div">
-                        <label>Message</label>
-                        <input type="text" name="Message" required>
+                        <label for="msg">Message</label>
+                        <input type="text" name="Message" id="msg" required>
                     </div>
 
                     <button type="submit">Send Message</button>
